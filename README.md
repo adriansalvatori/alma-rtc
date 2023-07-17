@@ -1,31 +1,17 @@
-# Acorn Example Package
+# Alma RTC - An approximation to RTC Communications for Alma projects. 
 
-This repo can be used to scaffold an Acorn package. See the [Acorn Package Development](https://roots.io/acorn/docs/package-development/) docs for further information.
+A package that should handle RTC communications between a PHP Alma Project and the Client App (Front-end with Blade).
 
 ## Installation
 
 You can install this package with Composer:
 
 ```bash
-composer require vendor-name/example-package
+composer require salvatori/alma-rtc
 ```
 
 You can publish the config file with:
 
 ```shell
-$ wp acorn vendor:publish --provider="VendorName\ExamplePackage\Providers\ExampleServiceProvider"
-```
-
-## Usage
-
-From a Blade template:
-
-```blade
-@include('Example::example')
-```
-
-From WP-CLI:
-
-```shell
-$ wp acorn example
+$ wp acorn vendor:publish --provider="Salvatori\AlmaRTC\Providers\AlmaRTCServiceProvider"
 ```
