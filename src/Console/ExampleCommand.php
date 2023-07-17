@@ -1,18 +1,18 @@
 <?php
 
-namespace VendorName\ExamplePackage\Console;
+namespace VendorName\AlmaRTCPackage\Console;
 
 use Roots\Acorn\Console\Commands\Command;
-use VendorName\ExamplePackage\Facades\Example;
+use VendorName\AlmaRTCPackage\Facades\AlmaRTC;
 
-class ExampleCommand extends Command
+class AlmaRTCCommand extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'example';
+    protected $signature = 'alma-rtc';
 
     /**
      * The console command description.
@@ -29,7 +29,7 @@ class ExampleCommand extends Command
     public function handle()
     {
         $this->info(
-            Example::getQuote()
+            AlmaRTC::getQuote()
         );
     }
 }

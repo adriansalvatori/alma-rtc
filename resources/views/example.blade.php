@@ -1,1 +1,1 @@
-{{ Example::getQuote() }}
+{{ AlmaRTC::getQuote() }}

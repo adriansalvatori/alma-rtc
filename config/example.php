@@ -4,7 +4,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Example Package
+    | AlmaRTC Package
     |--------------------------------------------------------------------------
     |
     | Configuration files provide a great way to customize your package.

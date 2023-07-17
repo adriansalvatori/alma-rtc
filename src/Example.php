@@ -1,11 +1,11 @@
 <?php
 
-namespace VendorName\ExamplePackage;
+namespace VendorName\AlmaRTCPackage;
 
 use Illuminate\Support\Arr;
 use Roots\Acorn\Application;
 
-class Example
+class AlmaRTC
 {
     /**
      * The application instance.
@@ -15,7 +15,7 @@ class Example
     protected $app;
 
     /**
-     * Create a new Example instance.
+     * Create a new AlmaRTC instance.
      *
      * @param  \Roots\Acorn\Application  $app
      * @return void
@@ -33,7 +33,7 @@ class Example
     public function getQuote()
     {
         return Arr::random(
-            config('example.quotes')
+            config('alma-rtc.quotes')
         );
     }
 }

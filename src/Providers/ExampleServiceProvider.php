@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\ExamplePackage\Providers;
+namespace VendorName\AlmaRTCPackage\Providers;
 
 use Roots\Acorn\ServiceProvider;
-use VendorName\ExamplePackage\Console\ExampleCommand;
-use VendorName\ExamplePackage\Example;
+use VendorName\AlmaRTCPackage\Console\AlmaRTCCommand;
+use VendorName\AlmaRTCPackage\AlmaRTC;
 
-class ExampleServiceProvider extends ServiceProvider
+class AlmaRTCServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
@@ -15,13 +15,13 @@ class ExampleServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('Example', function () {
-            return new Example($this->app);
+        $this->app->singleton('AlmaRTC', function () {
+            return new AlmaRTC($this->app);
         });
 
         $this->mergeConfigFrom(
-            __DIR__.'/../../config/example.php',
-            'example'
+            __DIR__.'/../../config/alma-rtc.php',
+            'alma-rtc'
         );
     }
 
@@ -33,18 +33,18 @@ class ExampleServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../../config/example.php' => $this->app->configPath('example.php'),
+            __DIR__.'/../../config/alma-rtc.php' => $this->app->configPath('alma-rtc.php'),
         ], 'config');
 
         $this->loadViewsFrom(
             __DIR__.'/../../resources/views',
-            'Example',
+            'AlmaRTC',
         );
 
         $this->commands([
-            ExampleCommand::class,
+            AlmaRTCCommand::class,
         ]);
 
-        $this->app->make('Example');
+        $this->app->make('AlmaRTC');
     }
 }
