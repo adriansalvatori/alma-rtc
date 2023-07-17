@@ -1,10 +1,10 @@
 <?php
 
-namespace Salvatori\AlmaRTCPackage\Providers;
+namespace Salvatori\AlmaRTC\Providers;
 
 use Roots\Acorn\ServiceProvider;
-use Salvatori\AlmaRTCPackage\Console\AlmaRTCCommand;
-use Salvatori\AlmaRTCPackage\AlmaRTC;
+use Salvatori\AlmaRTC\Console\AlmaRTCCommand;
+use Salvatori\AlmaRTC\AlmaRTC;
 
 class AlmaRTCServiceProvider extends ServiceProvider
 {

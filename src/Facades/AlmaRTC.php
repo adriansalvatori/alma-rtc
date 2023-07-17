@@ -1,6 +1,6 @@
 <?php
 
-namespace Salvatori\AlmaRTCPackage\Facades;
+namespace Salvatori\AlmaRTC\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
