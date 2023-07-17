@@ -18,6 +18,6 @@ return [
     */
 
     'quotes' => [
-        'For every Sage there is an Acorn.',
+        'For every Theme, we use our soul. This is what Alma is for.',
     ],
 ];
