@@ -1,29 +1,29 @@
 {
-  "name": "vendor-name/alma-rtc-package",
+  "name": "salvatori/alma-rtc",
   "type": "package",
-  "description": "An alma-rtc package for Roots Acorn.",
+  "description": "A package that should handle RTC communications between a PHP Alma Project and the Client App (Front-end with Blade).",
   "license": "MIT",
   "authors": [
     {
-      "name": "Brandon Nifong",
-      "email": "brandon@tendency.me"
+      "name": "Adrián Salvatori",
+      "email": "adriansalvatori@gmail.com"
     }
   ],
   "autoload": {
     "psr-4": {
-      "VendorName\\AlmaRTCPackage\\": "src/"
+      "Salvatori\\AlmaRTC\\": "src/"
     }
   },
   "require": {
-    "php": "^8.0"
+    "php": "^7.3"
   },
   "extra": {
     "acorn": {
       "providers": [
-        "VendorName\\AlmaRTCPackage\\Providers\\AlmaRTCServiceProvider"
+        "Salvatori\\AlmaRTC\\Providers\\AlmaRTCServiceProvider"
       ],
       "aliases": {
-        "AlmaRTC": "VendorName\\AlmaRTCPackage\\Facades\\AlmaRTC"
+        "AlmaRTC": "Salvatori\\AlmaRTC\\Facades\\AlmaRTC"
       }
     }
   }

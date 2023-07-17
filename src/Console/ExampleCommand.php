@@ -1,9 +1,9 @@
 <?php
 
-namespace VendorName\AlmaRTCPackage\Console;
+namespace Salvatori\AlmaRTCPackage\Console;
 
 use Roots\Acorn\Console\Commands\Command;
-use VendorName\AlmaRTCPackage\Facades\AlmaRTC;
+use Salvatori\AlmaRTCPackage\Facades\AlmaRTC;
 
 class AlmaRTCCommand extends Command
 {

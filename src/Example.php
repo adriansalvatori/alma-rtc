@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\AlmaRTCPackage;
+namespace Salvatori\AlmaRTCPackage;
 
 use Illuminate\Support\Arr;
 use Roots\Acorn\Application;
