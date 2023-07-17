@@ -15,3 +15,6 @@ You can publish the config file with:
 ```shell
 $ wp acorn vendor:publish --provider="Salvatori\AlmaRTC\Providers\AlmaRTCServiceProvider"
 ```
+## Disclaimer
+
+AlmaRTC is an experimental package, under heavy development, and should not be used in production until new notice. 
